@@ -1,0 +1,31 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(12, 10, 7);
+  margin: 0;
+  overflow: hidden;
+}
+
+#image-track {
+  display: flex;
+  align-items: center;
+  gap: 3vmin;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  transition: 0.5s;
+
+  .image {
+    width: 30vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% center;
+    border-radius: 20px;
+    transition: 0.5s;
+    z-index: 1;
+    border: 1px solid rgb(148, 129, 116);
+    filter: drop-shadow(0 0 10px #8f6e4c8b);
+    user-select: none;
+  }
+}
